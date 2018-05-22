@@ -1,0 +1,45 @@
+.board {
+  font-size: 14px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform-origin: 0 0;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  box-sizing: border-box;
+}
+
+.grid-ethereal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+span {
+  border: 1px red dashed;
+  grid-column: span 1;
+  grid-row: span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget {
+  background: lime;
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
